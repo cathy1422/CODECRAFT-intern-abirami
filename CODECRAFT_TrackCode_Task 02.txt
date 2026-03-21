@@ -1,0 +1,78 @@
+# compatibility testing report
+## project : E- commerce demo website
+
+---
+
+### Environment:
+-OS : Window/mobile
+-Browsers tested:
+chrome (working partially)
+- Firefox (Not working)
+- Edge (not working)
+- Safari (Not working)
+
+---
+
+### Steps to reproduce:
+1. open the website
+2. click on men's clothing or any category.
+3. try clicking product.
+4. click on "Add to Cart"
+
+---
+
+### Expected Result: 
+- Links should be clickable
+- Navigation should work properly 
+- Add to cart should add product
+
+---
+
+### Actual Result: 
+- Link are not clickable
+- Navigation not working properly 
+- Add to cart button responding. 
+
+---
+
+### Severity High
+### Priority High 
+
+---
+
+### Possible Causes:
+- JavaScript Compatibility issues 
+- click events not working 
+- Ul overlapping elements 
+- No cross browser support
+
+---
+
+### Recommendation:
+- Fix JavaScript issues
+-Ensure elements are clicked 
+-Test across all browsers
+-Use tools like Browserstack
+
+---
+
+### Conclusion:
+The website has major compatibility 
+issues affecting user experience and functionality. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
