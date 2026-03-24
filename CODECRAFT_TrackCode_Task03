@@ -1,0 +1,31 @@
+package swag;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class login {
+
+	public static void main(String[] args) throws InterruptedException{
+		WebDriver Login = new ChromeDriver();
+		Login.get("https://www.saucedemo.com/");
+		Login.manage().window().maximize();
+		Thread.sleep(3000);
+		
+		Login.findElement(By.id("user-name")).sendKeys("problem_user");
+		
+		Login.findElement(By.id("password")).sendKeys("secret_sauce");
+		
+		Login.findElement(By.id("login-button")).click();
+		
+		Thread.sleep(3000);
+
+        if(Login.getCurrentUrl().contains("inventory")) {
+            System.out.println("Login Successful");
+        } else {
+            System.out.println("Login Failed");
+        }
+
+        Login.quit();
+    }
+	}
